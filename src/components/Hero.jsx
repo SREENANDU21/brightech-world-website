@@ -65,7 +65,7 @@ const Hero = () => {
                         className="flex flex-col gap-4 max-w-3xl mx-auto px-4"
                     >
                         <a
-                            href="https://wa.me/message/7E7JB2XNIS7LG1?text=I am interested in getting a quote for LED Wall."
+                            href="https://wa.me/919388001144?text=Hello! I would like to get a quote for an LED Video Wall."
                             target="_blank"
                             className="w-full py-4 rounded font-bold text-white text-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 flex justify-center items-center gap-2"
                             style={{ backgroundColor: '#e6005c' }}

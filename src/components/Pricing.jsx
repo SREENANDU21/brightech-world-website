@@ -71,7 +71,7 @@ const Pricing = () => {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="https://wa.me/message/7E7JB2XNIS7LG1?text=Hello! Can I get more info on this?"
+                        href="https://wa.me/919388001144?text=Hello! I want a custom quote for specific LED screen sizes."
                         target="_blank"
                         className="btn btn-primary inline-flex items-center gap-2 px-8 py-3"
                     >
