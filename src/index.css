@@ -1,30 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* New Theme based on User Image: Magenta > Orange > Yellow */
-  --bg-dark: #2a0a18;
-  /* Vibrant Sunset/Fire Gradient */
-  --bg-gradient: linear-gradient(135deg, #99004d 0%, #ff4800 60%, #ffb300 100%);
+  /* Hawaii LED Model: Professional Light Theme */
+  --bg-dark: #ffffff;
+  --bg-gradient: #ffffff;
 
-  --bg-card: rgba(255, 255, 255, 0.1);
+  --bg-card: #f8f9fa;
+  --bg-card-hover: #ffffff;
 
-  --primary-neon: #fff;
-  /* White for strong contrast on bright bg */
-  --secondary-neon: #ffeb3b;
-  /* Yellow */
-  --accent-neon: #ff5722;
-  /* Orange */
+  --primary-color: #0056b3;
+  --secondary-color: #e6005c;
 
-  --text-main: #ffffff;
-  --text-muted: #ffebee;
-  /* Light pinkish white */
+  --text-main: #333333;
+  --text-muted: #666666;
+  --text-light: #ffffff;
 
   --font-main: 'Outfit', sans-serif;
 
-  --glass-bg: rgba(255, 255, 255, 0.15);
-  /* Slightly more opaque glass */
-  --glass-border: rgba(255, 255, 255, 0.3);
-  --glass-blur: 15px;
+  --border-color: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -35,8 +35,7 @@
 
 body {
   font-family: var(--font-main);
-  background: var(--bg-gradient);
-  background-attachment: fixed;
+  background: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
@@ -107,87 +106,58 @@ ul {
 /* Buttons */
 .btn {
   padding: 12px 24px;
-  border-radius: 50px;
+  border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
   border: none;
   font-size: 1rem;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
   z-index: 1;
+  display: inline-block;
 }
 
 .btn-primary {
-  background: white;
-  color: #bf004f;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: var(--secondary-color);
+  color: white;
+  box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-  background: #fff0f5;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #c2004d;
+  transform: translateY(-1px);
 }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--secondary-color);
+  color: white;
 }
 
 /* Text Styles */
 .gradient-text {
-  /* White text for better readability on this specific background */
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--secondary-color);
 }
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
+  color: var(--text-main);
+  text-transform: uppercase;
 }
 
 .section-subtitle {
   color: var(--text-muted);
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 3rem;
-  font-weight: 500;
-}
-
-/* Glassmorphism */
-.glass {
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-/* Logo Animation */
-@keyframes pulse-glow {
-
-  0%,
-  100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transform: scale(1);
-  }
-
-  50% {
-    text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
-    transform: scale(1.02);
-  }
-}
-
-.logo-animate {
-  animation: pulse-glow 3s infinite ease-in-out;
+  font-weight: 400;
 }
 
 /* Scrollbar */
@@ -196,14 +166,38 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  background: #5e002e;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.4);
+  background: #c1c1c1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: #a8a8a8;
+}
+
+/* Logo Animation */
+.logo-animate {
+  transition: color 0.3s ease;
+}
+
+.logo-animate:hover {
+  color: var(--secondary-color);
+}
+
+/* Shine Animation */
+@keyframes shine {
+  0% {
+    transform: translateX(-150%) skewX(12deg);
+  }
+
+  100% {
+    transform: translateX(150%) skewX(12deg);
+  }
+}
+
+.animate-shine {
+  animation: shine 1s;
 }

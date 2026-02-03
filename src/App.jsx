@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import SpecializedIn from './components/SpecializedIn';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <SpecializedIn />
       <Pricing />
       <Contact />
       <WhatsAppFloat />

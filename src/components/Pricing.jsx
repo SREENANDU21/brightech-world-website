@@ -13,8 +13,8 @@ const Pricing = () => {
                     <p className="section-subtitle">Competitive Square Feet Rates for Premium LED Items</p>
 
                     <div className="mt-6 inline-block glass px-6 py-3 rounded-full border border-[var(--primary-neon)]/30">
-                        <span className="text-[var(--text-muted)] uppercase text-xs tracking-wider block mb-1">Trusted Brands</span>
-                        <span className="text-lg font-bold text-white">HIKVISION • QIANGLI • MEYID</span>
+                        <span className="text-gray-500 uppercase text-xs tracking-wider block mb-1">Trusted Brands</span>
+                        <span className="text-lg font-bold text-gray-900">HIKVISION • QIANGLI • MEYID</span>
                     </div>
                 </div>
 
@@ -24,28 +24,28 @@ const Pricing = () => {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="glass p-8 rounded-3xl border border-white/10 hover:border-[var(--secondary-neon)] transition-all"
+                        className="glass p-8 rounded-3xl border border-gray-200 bg-white hover:shadow-lg transition-all"
                     >
                         <h3 className="text-2xl font-bold mb-6 text-[var(--secondary-neon)]">OUTDOOR</h3>
-                        <div className="space-y-4">
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                        <div className="space-y-4 text-gray-800">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P2.5 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹9,500 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹9,500 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P3 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹8,000 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹8,000 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P4 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹5,500 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹5,500 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P5 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹5,000 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹5,000 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
                         </div>
-                        <p className="text-xs text-[var(--text-muted)] mt-4">* Video Wall Screens</p>
+                        <p className="text-xs text-gray-500 mt-4">* Video Wall Screens</p>
                     </motion.div>
 
                     {/* Indoor Pricing */}
@@ -53,17 +53,17 @@ const Pricing = () => {
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="glass p-8 rounded-3xl border border-white/10 hover:border-[var(--primary-neon)] transition-all"
+                        className="glass p-8 rounded-3xl border border-gray-200 bg-white hover:shadow-lg transition-all"
                     >
                         <h3 className="text-2xl font-bold mb-6 text-[var(--primary-neon)]">INDOOR</h3>
-                        <div className="space-y-4">
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                        <div className="space-y-4 text-gray-800">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P2.5 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹5,500 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹5,500 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
-                            <div className="flex justify-between items-center border-b border-white/5 pb-2">
+                            <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                                 <span className="font-medium">P3 Pixel Pitch</span>
-                                <span className="font-bold text-xl">₹5,000 <span className="text-xs font-normal text-[var(--text-muted)]">/sq.ft</span></span>
+                                <span className="font-bold text-xl text-gray-900">₹5,000 <span className="text-xs font-normal text-gray-500">/sq.ft</span></span>
                             </div>
                         </div>
                     </motion.div>

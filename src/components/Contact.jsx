@@ -9,51 +9,61 @@ const Contact = () => {
 
                     {/* Brand Info */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-6 tracking-tighter">
-                            BRIGHT<span className="text-[var(--primary-neon)]">ECH</span> WORLD
-                        </h3>
-                        <p className="text-[var(--text-muted)] mb-6">
+                        <a href="#" className="flex items-center gap-3 mb-6">
+                            <img
+                                src="/assets/logo.png"
+                                alt="Brightech World"
+                                className="h-14 w-auto object-contain"
+                            />
+                            <div className="font-bold flex flex-col items-start leading-none tracking-tight text-gray-900">
+                                <span className="text-2xl tracking-tighter">BRIGHT<span className="text-[var(--primary-neon)]">ECH</span></span>
+                                <span className="text-2xl tracking-tighter">WORLD</span>
+                            </div>
+                        </a>
+                        <p className="text-gray-600 mb-6">
                             Your trusted partner for world-class LED display solutions.
                         </p>
                         <div className="flex gap-4">
-                            <a href="https://www.instagram.com/brightechworldscreen?igsh=eTRtZTh6bmNodHFs" target="_blank" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-[#E1306C] hover:text-white transition-all">
-                                <Instagram size={18} />
+                            {/* Instagram: Brand Color Icon, White Bubble, No Animation */}
+                            <a href="https://www.instagram.com/brightechworldscreen?igsh=eTRtZTh6bmNodHFs" target="_blank" className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-200">
+                                <Instagram size={20} color="#E1306C" />
                             </a>
-                            <a href="https://youtube.com/@BRIGHTECHWORLD" target="_blank" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-[#FF0000] hover:text-white transition-all">
-                                <Youtube size={18} />
+                            {/* YouTube: Brand Color Icon, White Bubble, No Animation */}
+                            <a href="https://youtube.com/@BRIGHTECHWORLD" target="_blank" className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-200">
+                                <Youtube size={20} color="#FF0000" fill="#FF0000" />
                             </a>
                         </div>
                     </div>
 
                     {/* Locations */}
                     <div className="lg:col-span-2">
-                        <h4 className="text-lg font-bold mb-6 text-white">Our Locations</h4>
+                        <h4 className="text-lg font-bold mb-6 text-gray-900">Our Locations</h4>
                         <div className="grid grid-cols-1 gap-6">
 
-                            <div className="glass p-4 rounded-xl border-l-4 border-[var(--primary-neon)]">
-                                <div className="flex items-center gap-2 text-[var(--primary-neon)] mb-2">
-                                    <span className="font-bold">Kerala, India (Trivandrum)</span>
+                            <div className="p-4 rounded-xl border-l-4 border-white bg-[#1e3a4e] shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                <div className="flex items-center gap-2 text-white mb-2">
+                                    <span className="font-bold text-lg">Kerala, India (Trivandrum)</span>
                                 </div>
-                                <div className="text-sm text-[var(--text-muted)] space-y-1">
+                                <div className="text-sm text-gray-200 space-y-1 font-medium">
                                     <p>9388001144</p>
                                     <p>8086755000</p>
                                 </div>
                             </div>
 
-                            <div className="glass p-4 rounded-xl border-l-4 border-[var(--secondary-neon)]">
-                                <div className="flex items-center gap-2 text-[var(--secondary-neon)] mb-2">
-                                    <span className="font-bold">Bengaluru</span>
+                            <div className="p-4 rounded-xl border-l-4 border-white bg-[#1e3a4e] shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                <div className="flex items-center gap-2 text-white mb-2">
+                                    <span className="font-bold text-lg">Bengaluru</span>
                                 </div>
-                                <div className="text-sm text-[var(--text-muted)] space-y-1">
+                                <div className="text-sm text-gray-200 space-y-1 font-medium">
                                     <p>8921109262</p>
                                 </div>
                             </div>
 
-                            <div className="glass p-4 rounded-xl border-l-4 border-[var(--accent-neon)]">
-                                <div className="flex items-center gap-2 text-[var(--accent-neon)] mb-2">
-                                    <span className="font-bold">Dubai, UAE (AL Qusais)</span>
+                            <div className="p-4 rounded-xl border-l-4 border-white bg-[#1e3a4e] shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+                                <div className="flex items-center gap-2 text-white mb-2">
+                                    <span className="font-bold text-lg">Dubai, UAE (AL Qusais)</span>
                                 </div>
-                                <div className="text-sm text-[var(--text-muted)] space-y-1">
+                                <div className="text-sm text-gray-200 space-y-1 font-medium">
                                     <p>+971 589319840</p>
                                     <p>+971 544965520</p>
                                 </div>
@@ -64,7 +74,7 @@ const Contact = () => {
 
                     {/* Quick Contact */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 text-white">Reach Us</h4>
+                        <h4 className="text-lg font-bold mb-6 text-gray-900">Reach Us</h4>
                         <a
                             href="https://wa.me/message/7E7JB2XNIS7LG1?text=Hello! Can I get more info on this?"
                             target="_blank"

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -22,35 +22,45 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4' : 'py-6 bg-transparent'}`}>
-      <div className="container flex justify-between items-center">
-        {/* Company Name: 2 Lines, Moderate Size */}
-        <a
-          href="#"
-          className="font-black italic tracking-tighter leading-none logo-animate flex flex-col items-start"
-          style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}
-        >
-          <span>BRIGHT<span style={{ color: 'white' }}>ECH</span></span>
-          <span style={{ marginTop: '-5px' }}>WORLD</span>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-2 bg-white shadow-md' : 'py-6 bg-[var(--bg-dark)]'}`}>
+      <div className="container flex justify-between items-start">
+        {/* Company Name: Stacked, Pink, Bold */}
+        {/* Company Name: Logo Image + Text */}
+        <a href="#" className="flex items-center gap-3">
+          <img
+            src="/assets/logo.png"
+            alt="Brightech World"
+            className="h-12 md:h-16 w-auto object-contain"
+          />
+          <div
+            className="font-bold flex flex-col items-start leading-none tracking-tight"
+            style={{
+              fontFamily: "'Outfit', sans-serif",
+              color: '#e6005c'
+            }}
+          >
+            <span style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}>BRIGHTECH</span>
+            <span style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}>WORLD</span>
+          </div>
         </a>
 
-        {/* Mobile Toggle - Always Visible */}
+        {/* Mobile Toggle (Boxed Style like screenshot) */}
         <button
-          className="text-white ml-auto"
+          className="text-[#333] mt-2 p-1 border border-gray-300 rounded"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
       </div>
 
-      {/* Menu Overlay */}
+      {/* Menu Overlay (Visible on all screens when toggled) */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass border-t border-[var(--glass-border)] overflow-hidden"
+            className="bg-white border-t border-gray-100 overflow-hidden shadow-xl absolute top-full left-0 w-full"
           >
             <div className="flex flex-col p-4 gap-4">
               {navLinks.map((link) => (
@@ -58,16 +68,17 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--glass-border)] transition-all"
+                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 text-[#333] font-semibold transition-all"
                 >
-                  <link.icon size={20} className="text-[var(--primary-neon)]" />
+                  <link.icon size={20} className="text-[#e6005c]" />
                   {link.name}
                 </a>
               ))}
               <a
                 href="https://wa.me/message/7E7JB2XNIS7LG1?text=Hello! Can I get more info on this?"
                 target="_blank"
-                className="btn btn-primary text-center mt-2"
+                className="btn w-full text-center mt-2 text-white font-bold"
+                style={{ backgroundColor: '#e6005c' }}
               >
                 WhatsApp Us
               </a>
