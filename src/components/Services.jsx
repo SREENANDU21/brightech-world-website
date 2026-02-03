@@ -85,7 +85,7 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                <a href="https://wa.me/message/7E7JB2XNIS7LG1?text=Hi, I am interested in your LED solutions." target="_blank" className="btn btn-outline text-sm w-full text-center group-hover:bg-[var(--secondary-color)] group-hover:text-white group-hover:border-[var(--secondary-color)]">
+                                <a href="https://api.whatsapp.com/message/7E7JB2XNIS7LG1?autoload=1&app_absent=0&text=Hi,%20I%20am%20interested%20in%20your%20LED%20solutions." target="_blank" className="btn btn-outline text-sm w-full text-center group-hover:bg-[var(--secondary-color)] group-hover:text-white group-hover:border-[var(--secondary-color)]">
                                     VIEW DETAILS
                                 </a>
                             </div>
