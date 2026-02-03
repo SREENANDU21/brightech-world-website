@@ -76,7 +76,7 @@ const Contact = () => {
                     <div>
                         <h4 className="text-lg font-bold mb-6 text-gray-900">Reach Us</h4>
                         <a
-                            href="https://wa.me/919388001144?text=Hello!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20services."
+                            href="https://wa.me/918281808385?text=Hello!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20services."
                             target="_blank"
                             className="btn btn-outline w-full flex items-center justify-center gap-2 mb-4"
                         >
