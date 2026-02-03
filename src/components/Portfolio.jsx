@@ -43,7 +43,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <a href="https://api.whatsapp.com/message/7E7JB2XNIS7LG1?autoload=1&app_absent=0&text=Hello!%20I%20saw%20your%20Portfolio%20projects%20and%20want%20to%20know%20more." target="_blank" className="btn btn-outline px-8">View More on WhatsApp</a>
+                    <a href="https://wa.me/919388001144?text=Hello!%20I%20saw%20your%20Portfolio%20projects%20and%20want%20to%20know%20more." target="_blank" className="btn btn-outline px-8">View More on WhatsApp</a>
                 </div>
             </div>
         </section>
