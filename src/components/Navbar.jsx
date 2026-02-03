@@ -75,7 +75,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/919388001144?text=Hello! I saw your website and want to know more about your services."
+                href="https://api.whatsapp.com/message/7E7JB2XNIS7LG1?autoload=1&app_absent=0&text=Hello!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20services."
                 target="_blank"
                 className="btn w-full text-center mt-2 text-white font-bold"
                 style={{ backgroundColor: '#e6005c' }}

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const WhatsAppFloat = () => {
     return (
         <motion.a
-            href="https://wa.me/919388001144?text=Hello! I am interested in your LED Display Solutions. Please share more details."
+            href="https://api.whatsapp.com/message/7E7JB2XNIS7LG1?autoload=1&app_absent=0&text=Hello!%20I%20am%20interested%20in%20your%20LED%20Display%20Solutions.%20Please%20share%20more%20details."
             target="_blank"
             className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:bg-[#20bd5a] transition-colors"
             whileHover={{ scale: 1.1 }}
